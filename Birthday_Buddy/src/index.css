@@ -273,10 +273,11 @@ ul {
 /* ============= PROJECT CSS =============== */
 
 /* optional overwrite */
-
 body {
   background: var(--primary-100);
 }
+
+
 
 /* * {
   border: 2px solid red;
@@ -290,7 +291,6 @@ main {
 }
 
 .container {
-  /* border: 2px solid red; */
   width: 90vw;
   max-width: var(--fixed-width);
   margin: 5rem 0;
@@ -307,9 +307,10 @@ main {
 .person {
   display: grid;
   grid-template-columns: auto 1fr;
-  column-gap: 0.75rem;
+  column-gap: 0.7rem;
   margin-bottom: 1.5rem;
   align-items: center;
+
 }
 
 .person img {

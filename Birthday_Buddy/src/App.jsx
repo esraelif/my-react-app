@@ -1,16 +1,19 @@
-import { useGlobalContext } from "./context"
-
+import { useState } from "react"
+import data from "./data"
+import List from "./List"
 
 function App() {
-  const { name } = useGlobalContext()
-  console.log(name)
-
-
-
+  const [people, setPeople] = useState(data)
+  // console.log(people)
   return (
-    <div className='container'>
+    <main>
+      <section className="container">
+        <h3>{people.length} birthdays Today</h3>
+        <List people={people} />
+        <button type="button" className="btn btn-block" onClick={() => setPeople([])}>Clear All</button>
 
-    </div>
+      </section>
+    </main>
   )
 }
 
