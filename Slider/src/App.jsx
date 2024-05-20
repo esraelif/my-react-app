@@ -1,18 +1,12 @@
-// import Carousel from "./Carousel"
+import Carousel from './Carousel';
+import SlickCarousel from './SlickCarousel';
 
-import SlickCarousel from "./SlickSlider"
-
-
-function App() {
-
-
+const App = () => {
   return (
     <main>
-      {/* <Carousel/> */}
-      <SlickCarousel />
-
+      <Carousel />
+      {/* <SlickCarousel /> */}
     </main>
-  )
-}
-
-export default App
+  );
+};
+export default App;
