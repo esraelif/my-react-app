@@ -336,3 +336,26 @@ form h4 {
 .Toastify__toast {
   text-transform: capitalize;
 }
+
+.links a {
+  color: var(--grey-700);
+  font-size: 1rem;
+  text-transform: capitalize;
+  letter-spacing: var(--letterSpacing);
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: var(--transition);
+}
+
+.links a:hover {
+  background: var(--primary-100);
+  color: var(--primary-500);
+  padding-left: 1.5rem;
+}
+
+/*  160px */
+.links-container {
+
+  overflow: hidden;
+  transition: var(--transition);
+}
